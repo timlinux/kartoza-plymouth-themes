@@ -1,0 +1,9 @@
+[Kartoza Plymouth Theme]
+Name=kartoza
+Description=Kartoza Plymouth Theme
+Comment=created By Tim Sutton (@timlinux)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/kartpza
+ScriptFile=/usr/share/plymouth/themes/template/kartoza.script

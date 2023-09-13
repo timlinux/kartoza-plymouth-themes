@@ -1,7 +1,6 @@
-## Author : Aditya Shakya (adi1090x)
-## Mail : adi1090x@gmail.com
-## Github : @adi1090x
-## Reddit : @adi1090x
+## Author : Tim Sutton (@timlinux)
+## Mail : tim@kartoza.com
+## Github : @timlinux
 
 // Screen size
 screen.w = Window.GetWidth(0);
@@ -28,7 +27,7 @@ state.time = 0.0;
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 # cycle through all images
-for (i = 0; i < NUM; i++)
+for (i = 0; i < 25; i++)
   flyingman_image[i] = Image("progress-" + i + ".png");
 flyingman_sprite = Sprite();
 
@@ -40,10 +39,10 @@ progress = 0;
 
 fun refresh_callback ()
   {
-    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / SPEED) % NUM]);
+    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % 25]);
     progress++;
   }
-
+  
 Plymouth.SetRefreshFunction (refresh_callback);
 
 //------------------------------------- Password prompt -------------------------------
@@ -105,3 +104,4 @@ fun MessageCallback(text) {
     message.sprite.SetPosition(screen.half.w - message.image.GetWidth() / 2, message.image.GetHeight());
 }
 Plymouth.SetMessageFunction(MessageCallback);
+
