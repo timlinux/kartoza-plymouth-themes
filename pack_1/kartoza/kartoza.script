@@ -27,8 +27,8 @@ state.time = 0.0;
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 # cycle through all images
-for (i = 0; i < 25; i++)
-  flyingman_image[i] = Image("progress-" + i + ".png");
+for (i = 0; i < 300; i++)
+  flyingman_image[i] = Image("kartoza-synfig-bootsplash." + i + ".png");
 flyingman_sprite = Sprite();
 
 # set image position
