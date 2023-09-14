@@ -39,7 +39,7 @@ progress = 0;
 
 fun refresh_callback ()
   {
-    kartoza_sprite.SetImage(kartoza_image[Math.Int(progress / 2) % 25]);
+    kartoza_sprite.SetImage(kartoza_image[Math.Int(progress / 2) % 301]);
     progress++;
   }
   
