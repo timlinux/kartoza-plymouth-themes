@@ -6,4 +6,4 @@ ModuleName=script
 
 [script]
 ImageDir=/usr/share/plymouth/themes/kartoza
-ScriptFile=/usr/share/plymouth/themes/template/kartoza.script
+ScriptFile=/usr/share/plymouth/themes/kartoza/kartoza.script
